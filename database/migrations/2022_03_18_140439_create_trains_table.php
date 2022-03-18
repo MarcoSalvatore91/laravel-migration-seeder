@@ -13,7 +13,7 @@ class CreateTrainsTable extends Migration
      */
     public function up()
     {
-        Schema::create('laravel_trains_db', function (Blueprint $table) {
+        Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('company', 50);
             $table->string('departure_station', 50);
@@ -35,6 +35,6 @@ class CreateTrainsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('laravel_trains_db');
+        Schema::dropIfExists('trains');
     }
 }
