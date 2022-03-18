@@ -20,7 +20,7 @@
     <strong>Status: </strong>
     @if($train->in_time)
     <span>In Orario</span>
-    @elseif($train->delete)
+    @elseif($train->deleted)
     <span>Cancellato</span>
     @endif
     @endforeach
